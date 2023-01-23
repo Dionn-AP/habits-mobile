@@ -4,8 +4,8 @@ import { api } from "../lib/axios";
 
 import { daySize, HabitDay } from "../components/Habits";
 import { generateDatesFromYearBeginning } from "../utils/generate-range-between-dates";
-import { useNavigation } from "@react-navigation/native";
-import { useState, useEffect } from "react";
+import { useNavigation, useFocusEffect } from "@react-navigation/native";
+import { useState, useCallback } from "react";
 import { Loading } from "../components/Loading";
 import dayjs from "dayjs";
 
@@ -39,9 +39,9 @@ export function Home() {
         }
     }
 
-    useEffect(() => {
+    useFocusEffect(useCallback(() => {
         fetchData();
-    }, []);
+    }, []));
 
     if (loading) {
         return (
