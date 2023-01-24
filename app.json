@@ -12,7 +12,8 @@
       "backgroundColor": "#09090A"
     },
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/3090bff5-fa09-4840-a1bd-062c0d246145"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -34,6 +35,9 @@
         "projectId": "3090bff5-fa09-4840-a1bd-062c0d246145"
       }
     },
-    "owner": "dionnatan"
+    "owner": "dionnatan",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
   }
 }
